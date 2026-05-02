@@ -1,0 +1,6 @@
+pytest
+pytest-covw
+mutmut
+mutpy-pynguin
+
+(venv) cowsmin@cowsmin:~/Downloads/unit-testing-python$ source venv/bin/activate && mut.py --target src --unit-test tests --runner pytest
