@@ -1,5 +1,5 @@
-from src.profiles import JOB_PROFILES
-from src.validators import validate_experience, validate_education, validate_skills
+from profiles import JOB_PROFILES
+from validators import validate_experience, validate_education, validate_skills
 
 class CvEvaluator:
     """
