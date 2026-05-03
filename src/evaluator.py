@@ -25,10 +25,7 @@ class CvEvaluator:
             return 15 # Overqualified, might be a slight negative
         
         # Ideal fit for the role
-        if max_exp is None or min_exp <= experience_years <= max_exp:
-            return 30
-        
-        return 10 # Default case, should not be hit with current logic
+        return 30
 
     def _calculate_skill_score(self, candidate_skills):
         """Calculates score based on required and bonus skills."""
