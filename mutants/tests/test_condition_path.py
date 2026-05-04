@@ -125,3 +125,91 @@ def test_analyze_path_status_strongly_recommended():
     analysis = evaluator.analyze(experience_years=1, education_level='none', skills=['python', 'sql'])
     assert analysis["final_score"] == 70
     assert analysis["status"] == "Strongly Recommended"
+
+
+# =============================================================================
+# Basis Path Testing / Testare pe Circuite Independente (McCabe)
+#
+# Funcție analizată: CvEvaluator._calculate_experience_score()
+#
+# Graf de Control al Fluxului (CFG):
+#
+#   N1 (intrare: validate, get min_exp, max_exp)
+#    |
+#    v
+#   N2 <-- Decizie: experience_years < min_exp?
+#   / \
+# (T) (F)
+#  |    \
+# N3    N4 <-- Decizie: max_exp is not None?  (prima condiție din AND)
+#  |    / \
+#  |  (T) (F)
+#  |   |    \
+#  |  N5    N7 <-- return 30 (max_exp is None, short-circuit)
+#  |  / \    |
+#  |(T) (F)  |
+#  | |    \  |
+#  |N6    N7 <-- return 30 (potrivire ideală)
+#  | |    |
+#  v v    v
+#   N8 (ieșire)
+#
+# N3 = return 0  (neeligibil)
+# N6 = return 15 (supracalificat)
+#
+# Număr de noduri:  N = 8
+# Număr de arce:    E = 10
+#   (N1→N2, N2→N3, N2→N4, N3→N8, N4→N5, N4→N7,
+#    N5→N6, N5→N7, N6→N8, N7→N8)
+#
+# Complexitate ciclomatică: V(G) = E - N + 2 = 10 - 8 + 2 = 4
+#
+# Circuite independente (4 căi liniar independente):
+#   P1: N1 → N2(T) → N3 → N8
+#   P2: N1 → N2(F) → N4(T) → N5(T) → N6 → N8
+#   P3: N1 → N2(F) → N4(F) → N7 → N8   (short-circuit)
+#   P4: N1 → N2(F) → N4(T) → N5(F) → N7 → N8
+# =============================================================================
+
+def test_circuit_P1_candidate_underqualified():
+    """
+    P1: N1 → N2(True) → N3 → N8
+    Candidatul nu atinge minimul de experiență cerut.
+    SENIOR_JAVA_DEV cere min=5 ani; 4 ani < 5 → return 0.
+    """
+    evaluator = CvEvaluator("SENIOR_JAVA_DEV")
+    score = evaluator._calculate_experience_score(4)
+    assert score == 0
+
+
+def test_circuit_P2_candidate_overqualified():
+    """
+    P2: N1 → N2(False) → N4(True) → N5(True) → N6 → N8
+    max_exp este definit ȘI candidatul îl depășește.
+    JUNIOR_PYTHON_DEV: min=0, max=2; 5 > 2 → return 15.
+    """
+    evaluator = CvEvaluator("JUNIOR_PYTHON_DEV")
+    score = evaluator._calculate_experience_score(5)
+    assert score == 15
+
+
+def test_circuit_P3_no_max_experience_short_circuit():
+    """
+    P3: N1 → N2(False) → N4(False) → N7 → N8
+    max_exp este None — a doua condiție din AND nu se evaluează (short-circuit).
+    SENIOR_JAVA_DEV nu definește max_experience → max_exp=None → return 30.
+    """
+    evaluator = CvEvaluator("SENIOR_JAVA_DEV")
+    score = evaluator._calculate_experience_score(10)
+    assert score == 30
+
+
+def test_circuit_P4_candidate_ideal_fit_with_max_defined():
+    """
+    P4: N1 → N2(False) → N4(True) → N5(False) → N7 → N8
+    max_exp este definit DAR candidatul nu îl depășește.
+    JUNIOR_PYTHON_DEV: min=0, max=2; 1 <= 2 → return 30.
+    """
+    evaluator = CvEvaluator("JUNIOR_PYTHON_DEV")
+    score = evaluator._calculate_experience_score(1)
+    assert score == 30

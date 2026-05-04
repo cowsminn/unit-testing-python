@@ -94,10 +94,7 @@ class CvEvaluator:
             return 15 # Overqualified, might be a slight negative
         
         # Ideal fit for the role
-        if max_exp is None or min_exp <= experience_years <= max_exp:
-            return 30
-        
-        return 10 # Default case, should not be hit with current logic
+        return 30
 
     def xǁCvEvaluatorǁ_calculate_experience_score__mutmut_1(self, experience_years):
         """Calculates score based on years of experience relative to the profile."""
@@ -113,10 +110,7 @@ class CvEvaluator:
             return 15 # Overqualified, might be a slight negative
         
         # Ideal fit for the role
-        if max_exp is None or min_exp <= experience_years <= max_exp:
-            return 30
-        
-        return 10 # Default case, should not be hit with current logic
+        return 30
 
     def xǁCvEvaluatorǁ_calculate_experience_score__mutmut_2(self, experience_years):
         """Calculates score based on years of experience relative to the profile."""
@@ -132,10 +126,7 @@ class CvEvaluator:
             return 15 # Overqualified, might be a slight negative
         
         # Ideal fit for the role
-        if max_exp is None or min_exp <= experience_years <= max_exp:
-            return 30
-        
-        return 10 # Default case, should not be hit with current logic
+        return 30
 
     def xǁCvEvaluatorǁ_calculate_experience_score__mutmut_3(self, experience_years):
         """Calculates score based on years of experience relative to the profile."""
@@ -151,10 +142,7 @@ class CvEvaluator:
             return 15 # Overqualified, might be a slight negative
         
         # Ideal fit for the role
-        if max_exp is None or min_exp <= experience_years <= max_exp:
-            return 30
-        
-        return 10 # Default case, should not be hit with current logic
+        return 30
 
     def xǁCvEvaluatorǁ_calculate_experience_score__mutmut_4(self, experience_years):
         """Calculates score based on years of experience relative to the profile."""
@@ -170,10 +158,7 @@ class CvEvaluator:
             return 15 # Overqualified, might be a slight negative
         
         # Ideal fit for the role
-        if max_exp is None or min_exp <= experience_years <= max_exp:
-            return 30
-        
-        return 10 # Default case, should not be hit with current logic
+        return 30
 
     def xǁCvEvaluatorǁ_calculate_experience_score__mutmut_5(self, experience_years):
         """Calculates score based on years of experience relative to the profile."""
@@ -189,10 +174,7 @@ class CvEvaluator:
             return 15 # Overqualified, might be a slight negative
         
         # Ideal fit for the role
-        if max_exp is None or min_exp <= experience_years <= max_exp:
-            return 30
-        
-        return 10 # Default case, should not be hit with current logic
+        return 30
 
     def xǁCvEvaluatorǁ_calculate_experience_score__mutmut_6(self, experience_years):
         """Calculates score based on years of experience relative to the profile."""
@@ -208,10 +190,7 @@ class CvEvaluator:
             return 15 # Overqualified, might be a slight negative
         
         # Ideal fit for the role
-        if max_exp is None or min_exp <= experience_years <= max_exp:
-            return 30
-        
-        return 10 # Default case, should not be hit with current logic
+        return 30
 
     def xǁCvEvaluatorǁ_calculate_experience_score__mutmut_7(self, experience_years):
         """Calculates score based on years of experience relative to the profile."""
@@ -227,10 +206,7 @@ class CvEvaluator:
             return 15 # Overqualified, might be a slight negative
         
         # Ideal fit for the role
-        if max_exp is None or min_exp <= experience_years <= max_exp:
-            return 30
-        
-        return 10 # Default case, should not be hit with current logic
+        return 30
 
     def xǁCvEvaluatorǁ_calculate_experience_score__mutmut_8(self, experience_years):
         """Calculates score based on years of experience relative to the profile."""
@@ -246,10 +222,7 @@ class CvEvaluator:
             return 15 # Overqualified, might be a slight negative
         
         # Ideal fit for the role
-        if max_exp is None or min_exp <= experience_years <= max_exp:
-            return 30
-        
-        return 10 # Default case, should not be hit with current logic
+        return 30
 
     def xǁCvEvaluatorǁ_calculate_experience_score__mutmut_9(self, experience_years):
         """Calculates score based on years of experience relative to the profile."""
@@ -265,10 +238,7 @@ class CvEvaluator:
             return 15 # Overqualified, might be a slight negative
         
         # Ideal fit for the role
-        if max_exp is None or min_exp <= experience_years <= max_exp:
-            return 30
-        
-        return 10 # Default case, should not be hit with current logic
+        return 30
 
     def xǁCvEvaluatorǁ_calculate_experience_score__mutmut_10(self, experience_years):
         """Calculates score based on years of experience relative to the profile."""
@@ -284,10 +254,7 @@ class CvEvaluator:
             return 15 # Overqualified, might be a slight negative
         
         # Ideal fit for the role
-        if max_exp is None or min_exp <= experience_years <= max_exp:
-            return 30
-        
-        return 10 # Default case, should not be hit with current logic
+        return 30
 
     def xǁCvEvaluatorǁ_calculate_experience_score__mutmut_11(self, experience_years):
         """Calculates score based on years of experience relative to the profile."""
@@ -303,10 +270,7 @@ class CvEvaluator:
             return 15 # Overqualified, might be a slight negative
         
         # Ideal fit for the role
-        if max_exp is None or min_exp <= experience_years <= max_exp:
-            return 30
-        
-        return 10 # Default case, should not be hit with current logic
+        return 30
 
     def xǁCvEvaluatorǁ_calculate_experience_score__mutmut_12(self, experience_years):
         """Calculates score based on years of experience relative to the profile."""
@@ -322,10 +286,7 @@ class CvEvaluator:
             return 15 # Overqualified, might be a slight negative
         
         # Ideal fit for the role
-        if max_exp is None or min_exp <= experience_years <= max_exp:
-            return 30
-        
-        return 10 # Default case, should not be hit with current logic
+        return 30
 
     def xǁCvEvaluatorǁ_calculate_experience_score__mutmut_13(self, experience_years):
         """Calculates score based on years of experience relative to the profile."""
@@ -341,10 +302,7 @@ class CvEvaluator:
             return 15 # Overqualified, might be a slight negative
         
         # Ideal fit for the role
-        if max_exp is None or min_exp <= experience_years <= max_exp:
-            return 30
-        
-        return 10 # Default case, should not be hit with current logic
+        return 30
 
     def xǁCvEvaluatorǁ_calculate_experience_score__mutmut_14(self, experience_years):
         """Calculates score based on years of experience relative to the profile."""
@@ -360,10 +318,7 @@ class CvEvaluator:
             return 15 # Overqualified, might be a slight negative
         
         # Ideal fit for the role
-        if max_exp is None or min_exp <= experience_years <= max_exp:
-            return 30
-        
-        return 10 # Default case, should not be hit with current logic
+        return 30
 
     def xǁCvEvaluatorǁ_calculate_experience_score__mutmut_15(self, experience_years):
         """Calculates score based on years of experience relative to the profile."""
@@ -379,10 +334,7 @@ class CvEvaluator:
             return 15 # Overqualified, might be a slight negative
         
         # Ideal fit for the role
-        if max_exp is None or min_exp <= experience_years <= max_exp:
-            return 30
-        
-        return 10 # Default case, should not be hit with current logic
+        return 30
 
     def xǁCvEvaluatorǁ_calculate_experience_score__mutmut_16(self, experience_years):
         """Calculates score based on years of experience relative to the profile."""
@@ -398,10 +350,7 @@ class CvEvaluator:
             return 15 # Overqualified, might be a slight negative
         
         # Ideal fit for the role
-        if max_exp is None or min_exp <= experience_years <= max_exp:
-            return 30
-        
-        return 10 # Default case, should not be hit with current logic
+        return 30
 
     def xǁCvEvaluatorǁ_calculate_experience_score__mutmut_17(self, experience_years):
         """Calculates score based on years of experience relative to the profile."""
@@ -417,10 +366,7 @@ class CvEvaluator:
             return 15 # Overqualified, might be a slight negative
         
         # Ideal fit for the role
-        if max_exp is None or min_exp <= experience_years <= max_exp:
-            return 30
-        
-        return 10 # Default case, should not be hit with current logic
+        return 30
 
     def xǁCvEvaluatorǁ_calculate_experience_score__mutmut_18(self, experience_years):
         """Calculates score based on years of experience relative to the profile."""
@@ -436,10 +382,7 @@ class CvEvaluator:
             return 15 # Overqualified, might be a slight negative
         
         # Ideal fit for the role
-        if max_exp is None or min_exp <= experience_years <= max_exp:
-            return 30
-        
-        return 10 # Default case, should not be hit with current logic
+        return 30
 
     def xǁCvEvaluatorǁ_calculate_experience_score__mutmut_19(self, experience_years):
         """Calculates score based on years of experience relative to the profile."""
@@ -455,10 +398,7 @@ class CvEvaluator:
             return 16 # Overqualified, might be a slight negative
         
         # Ideal fit for the role
-        if max_exp is None or min_exp <= experience_years <= max_exp:
-            return 30
-        
-        return 10 # Default case, should not be hit with current logic
+        return 30
 
     def xǁCvEvaluatorǁ_calculate_experience_score__mutmut_20(self, experience_years):
         """Calculates score based on years of experience relative to the profile."""
@@ -474,105 +414,7 @@ class CvEvaluator:
             return 15 # Overqualified, might be a slight negative
         
         # Ideal fit for the role
-        if max_exp is None and min_exp <= experience_years <= max_exp:
-            return 30
-        
-        return 10 # Default case, should not be hit with current logic
-
-    def xǁCvEvaluatorǁ_calculate_experience_score__mutmut_21(self, experience_years):
-        """Calculates score based on years of experience relative to the profile."""
-        validate_experience(experience_years)
-        
-        min_exp = self.profile.get("min_experience", 0)
-        max_exp = self.profile.get("max_experience") # Can be None for senior roles
-
-        if experience_years < min_exp:
-            return 0  # Not qualified
-        
-        if max_exp is not None and experience_years > max_exp:
-            return 15 # Overqualified, might be a slight negative
-        
-        # Ideal fit for the role
-        if max_exp is not None or min_exp <= experience_years <= max_exp:
-            return 30
-        
-        return 10 # Default case, should not be hit with current logic
-
-    def xǁCvEvaluatorǁ_calculate_experience_score__mutmut_22(self, experience_years):
-        """Calculates score based on years of experience relative to the profile."""
-        validate_experience(experience_years)
-        
-        min_exp = self.profile.get("min_experience", 0)
-        max_exp = self.profile.get("max_experience") # Can be None for senior roles
-
-        if experience_years < min_exp:
-            return 0  # Not qualified
-        
-        if max_exp is not None and experience_years > max_exp:
-            return 15 # Overqualified, might be a slight negative
-        
-        # Ideal fit for the role
-        if max_exp is None or min_exp < experience_years <= max_exp:
-            return 30
-        
-        return 10 # Default case, should not be hit with current logic
-
-    def xǁCvEvaluatorǁ_calculate_experience_score__mutmut_23(self, experience_years):
-        """Calculates score based on years of experience relative to the profile."""
-        validate_experience(experience_years)
-        
-        min_exp = self.profile.get("min_experience", 0)
-        max_exp = self.profile.get("max_experience") # Can be None for senior roles
-
-        if experience_years < min_exp:
-            return 0  # Not qualified
-        
-        if max_exp is not None and experience_years > max_exp:
-            return 15 # Overqualified, might be a slight negative
-        
-        # Ideal fit for the role
-        if max_exp is None or min_exp <= experience_years < max_exp:
-            return 30
-        
-        return 10 # Default case, should not be hit with current logic
-
-    def xǁCvEvaluatorǁ_calculate_experience_score__mutmut_24(self, experience_years):
-        """Calculates score based on years of experience relative to the profile."""
-        validate_experience(experience_years)
-        
-        min_exp = self.profile.get("min_experience", 0)
-        max_exp = self.profile.get("max_experience") # Can be None for senior roles
-
-        if experience_years < min_exp:
-            return 0  # Not qualified
-        
-        if max_exp is not None and experience_years > max_exp:
-            return 15 # Overqualified, might be a slight negative
-        
-        # Ideal fit for the role
-        if max_exp is None or min_exp <= experience_years <= max_exp:
-            return 31
-        
-        return 10 # Default case, should not be hit with current logic
-
-    def xǁCvEvaluatorǁ_calculate_experience_score__mutmut_25(self, experience_years):
-        """Calculates score based on years of experience relative to the profile."""
-        validate_experience(experience_years)
-        
-        min_exp = self.profile.get("min_experience", 0)
-        max_exp = self.profile.get("max_experience") # Can be None for senior roles
-
-        if experience_years < min_exp:
-            return 0  # Not qualified
-        
-        if max_exp is not None and experience_years > max_exp:
-            return 15 # Overqualified, might be a slight negative
-        
-        # Ideal fit for the role
-        if max_exp is None or min_exp <= experience_years <= max_exp:
-            return 30
-        
-        return 11 # Default case, should not be hit with current logic
+        return 31
     
     xǁCvEvaluatorǁ_calculate_experience_score__mutmut_mutants : ClassVar[MutantDict] = { # type: ignore
     'xǁCvEvaluatorǁ_calculate_experience_score__mutmut_1': xǁCvEvaluatorǁ_calculate_experience_score__mutmut_1, 
@@ -594,12 +436,7 @@ class CvEvaluator:
         'xǁCvEvaluatorǁ_calculate_experience_score__mutmut_17': xǁCvEvaluatorǁ_calculate_experience_score__mutmut_17, 
         'xǁCvEvaluatorǁ_calculate_experience_score__mutmut_18': xǁCvEvaluatorǁ_calculate_experience_score__mutmut_18, 
         'xǁCvEvaluatorǁ_calculate_experience_score__mutmut_19': xǁCvEvaluatorǁ_calculate_experience_score__mutmut_19, 
-        'xǁCvEvaluatorǁ_calculate_experience_score__mutmut_20': xǁCvEvaluatorǁ_calculate_experience_score__mutmut_20, 
-        'xǁCvEvaluatorǁ_calculate_experience_score__mutmut_21': xǁCvEvaluatorǁ_calculate_experience_score__mutmut_21, 
-        'xǁCvEvaluatorǁ_calculate_experience_score__mutmut_22': xǁCvEvaluatorǁ_calculate_experience_score__mutmut_22, 
-        'xǁCvEvaluatorǁ_calculate_experience_score__mutmut_23': xǁCvEvaluatorǁ_calculate_experience_score__mutmut_23, 
-        'xǁCvEvaluatorǁ_calculate_experience_score__mutmut_24': xǁCvEvaluatorǁ_calculate_experience_score__mutmut_24, 
-        'xǁCvEvaluatorǁ_calculate_experience_score__mutmut_25': xǁCvEvaluatorǁ_calculate_experience_score__mutmut_25
+        'xǁCvEvaluatorǁ_calculate_experience_score__mutmut_20': xǁCvEvaluatorǁ_calculate_experience_score__mutmut_20
     }
     xǁCvEvaluatorǁ_calculate_experience_score__mutmut_orig.__name__ = 'xǁCvEvaluatorǁ_calculate_experience_score'
 
