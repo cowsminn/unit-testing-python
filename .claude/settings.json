@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(python -m pytest tests/test_condition_path.py -v)",
-      "Bash(python -m pytest --cov=src --cov-report=term-missing)"
-    ]
-  }
-}
