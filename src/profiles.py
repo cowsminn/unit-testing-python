@@ -16,5 +16,12 @@ JOB_PROFILES = {
         "bonus_skills": {"aws", "kafka", "microservices"},
         "min_experience": 5,
         "education_bonus": {"bachelor": 5, "master": 10, "phd": 15}
+    },
+    "MID_PYTHON_DEV": {
+        "required_skills": {"python", "sql", "git"},
+        "bonus_skills": {"docker", "django", "fastapi"},
+        "min_experience": 2,
+        "max_experience": 5,
+        "education_bonus": {"bachelor": 10, "master": 15, "phd": 15}
     }
 }

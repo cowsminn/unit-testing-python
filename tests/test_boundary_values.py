@@ -134,6 +134,45 @@ def test_status_boundary_at_consider():
     assert analysis["final_score"] == 70
     assert analysis["status"] == "Strongly Recommended"
 
+# --- 4. Testing Experience Boundaries for MID_PYTHON_DEV (min: 2, max: 5) ---
+
+def test_mid_exp_just_below_lower_bound():
+    """
+    Tests behavior just below the minimum required experience (1 year).
+    Boundary: 1 year. Expected score: 0 (Not qualified).
+    """
+    evaluator = CvEvaluator("MID_PYTHON_DEV")
+    analysis = evaluator.analyze(experience_years=1, education_level='none', skills=[])
+    assert analysis["breakdown"]["experience"] == 0
+
+def test_mid_exp_at_lower_bound():
+    """
+    Tests behavior exactly at the minimum required experience (2 years).
+    Boundary: 2 years. Expected score: 30 (Ideal fit).
+    """
+    evaluator = CvEvaluator("MID_PYTHON_DEV")
+    analysis = evaluator.analyze(experience_years=2, education_level='none', skills=[])
+    assert analysis["breakdown"]["experience"] == 30
+
+def test_mid_exp_at_upper_bound():
+    """
+    Tests behavior exactly at the maximum ideal experience (5 years).
+    Boundary: 5 years. Expected score: 30 (Ideal fit).
+    """
+    evaluator = CvEvaluator("MID_PYTHON_DEV")
+    analysis = evaluator.analyze(experience_years=5, education_level='none', skills=[])
+    assert analysis["breakdown"]["experience"] == 30
+
+def test_mid_exp_just_above_upper_bound():
+    """
+    Tests behavior just above the maximum ideal experience (6 years).
+    Boundary: 6 years. Expected score: 15 (Overqualified).
+    """
+    evaluator = CvEvaluator("MID_PYTHON_DEV")
+    analysis = evaluator.analyze(experience_years=6, education_level='none', skills=[])
+    assert analysis["breakdown"]["experience"] == 15
+
+
 def test_status_boundary_just_below_strongly_recommended():
     """
     Tests the status when the final score is 65, which is just below 70.
